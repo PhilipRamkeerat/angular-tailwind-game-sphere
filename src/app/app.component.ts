@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'games-tailwind';
+
+  showMenu = false;
+  toggleNavbar(){
+    console.log('button clicked');
+
+    this.showMenu = !this.showMenu;
+  }
 }
