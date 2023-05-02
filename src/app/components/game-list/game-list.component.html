@@ -1,11 +1,10 @@
 
 <!-- Cards -->
-
-<div class="w-full bg-slate-700">
+<div class="w-full bg-zinc-900 pt-2">
   <div class="flex flex-wrap justify-center">
-    <div class="grid grid-cols-1 md:grid-cols-3 grid-cols gap-3">
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-cols gap-3">
       <!-- Cards Inicio -->
-      <div *ngFor="let game of games" class="max-w-sm shadow-md bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+      <div *ngFor="let game of games" class="max-w-sm shadow-md bg-white border border-gray-200 rounded-lg dark:bg-zinc-800	 dark:border-zinc-900">
         <a [routerLink]="['/games', game.id]">
           <img class="rounded-t-lg" [src]="game.imageUrl" alt="" />
         </a>
@@ -19,7 +18,7 @@
             {{ game.description }}
           </p>
           <a [routerLink]="['/games', game.id]"
-            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-zinc-700 rounded-lg hover:bg-zinc-800 focus:ring-4 focus:outline-none focus:ring-zinc-300 dark:bg-zinc-600 dark:hover:bg-zinc-700 dark:focus:ring-zinc-800">
             Read more
             <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg">
