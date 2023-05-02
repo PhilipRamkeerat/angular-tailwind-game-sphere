@@ -1,4 +1,7 @@
+import { CommonModule } from '@angular/common';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +11,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'games-tailwind';
 
-  showMenu = false;
-  toggleNavbar(){
-    console.log('button clicked');
 
-    this.showMenu = !this.showMenu;
-  }
 }
